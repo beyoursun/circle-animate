@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Animate</title>
+    <style>
+        body { margin: 0; }
+        ul { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 20em; height: 20em; padding: 0; margin: auto; border-radius: 50%; background-color: #eee; list-style: none; }
+        li { position: absolute; left: 50%; width: 1em; height: 100%; margin-left: -.5em; }
+        li:nth-child(2) { transform: rotate(22.5deg); }
+        li:nth-child(3) { transform: rotate(45deg); }
+        li:nth-child(4) { transform: rotate(67.5deg); }
+        li:nth-child(5) { transform: rotate(90deg); }
+        li:nth-child(6) { transform: rotate(112.5deg); }
+        li:nth-child(7) { transform: rotate(135deg); }
+        li:nth-child(8) { transform: rotate(157.5deg); }
+        i { display: block; width: 1em; height: 1em; border-radius: 50%; background-color: blueviolet;  animation: upDown 6.4s ease-in-out infinite; }
+        li:nth-child(2) i { animation-delay: .4s; }
+        li:nth-child(3) i { animation-delay: .8s; }
+        li:nth-child(4) i { animation-delay: 1.2s; }
+        li:nth-child(5) i { animation-delay: 1.6s; }
+        li:nth-child(6) i { animation-delay: 2s; }
+        li:nth-child(7) i { animation-delay: 2.4s; }
+        li:nth-child(8) i { animation-delay: 2.8s; }
+        @keyframes upDown {
+            50% { transform: translateY(19em); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+    </ul>
+</body>
+</html>
